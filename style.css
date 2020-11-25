@@ -1,0 +1,332 @@
+.header {
+  text-align: center; 
+  background-color:rgb(201, 199, 200); 
+  padding-top: 1rem; 
+  padding-bottom: 1.5rem; 
+  margin-bottom:0;  
+}
+
+.header h1 {
+  color: rgb(95, 95, 93);  
+}
+
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 2em;
+  }
+}
+
+.header p {
+    color: rgb(95, 95, 93);
+    font-size: 20px; 
+}
+
+.language {
+  text-align: right; 
+  padding-right: 2rem;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .language {
+    padding-right: 1.5rem;
+  }
+}
+
+.language a {
+  color: rgb(95, 95, 93);   
+}
+
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  text-decoration: none;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+#myPhoto {
+  width: 180px; 
+  height: 180px; 
+}
+
+#pdf-button {
+  width: 90px;
+}
+
+.contact {
+  background-color: rgb(223, 200, 158); 
+  padding-top: 0.3rem; 
+  padding-bottom: 0.3rem; 
+}
+
+#mediaIcons {
+  text-align: center;
+}
+
+#mediaIcons a {
+  color: rgb(95, 95, 93);
+  font-weight: 600;
+}
+
+#link1 {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #socialBar {
+    margin-top: 0.6rem;
+  }
+}
+
+#link1:link {
+  opacity: 0.8;
+}
+
+#link1:visited {
+ opacity: 1;
+}
+
+#link1:hover {
+ opacity: 1;
+}
+
+#link1:active {
+ opacity: 1;
+}
+
+#socialIcon {
+  width: 2rem; 
+  height: 2rem; 
+  margin-right: 1rem;  
+}
+
+#iconOpacity {
+  opacity: 0.8;
+  width: 2rem; 
+  height: 2rem; 
+  margin-right: 1rem; 
+}
+
+.section {
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 600px) {
+  .section {
+    margin-top: 2rem;
+  }
+}
+
+.aboutMe {
+  text-align: center;
+}
+
+.aboutMe h3 {
+  margin-bottom: 2rem; 
+  text-decoration: underline;
+  color: rgb(95, 95, 93);
+}
+
+.row h3 {
+  margin-bottom: 2rem; 
+  text-decoration: underline; 
+  text-align: center;
+  color: rgb(95, 95, 93);   
+}
+
+@media (max-width: 600px) {
+  .projectItem {
+    text-align: center;
+  }
+}
+
+.projectItem h5 {
+  color: rgb(223, 194, 140);
+}
+
+.projectItem a {
+  color: rgb(95, 95, 93);
+  font-weight: bold; 
+}
+
+#nextProject {
+  margin-top: 2rem;
+}
+
+.projectItem p {
+  margin-top: 0.5rem;    
+}
+
+span.checked {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  #skills {
+    margin-top: 1rem;
+  }
+}
+
+#skillsItems {
+    text-align: right; 
+}
+
+@media (max-width: 600px) {
+  #skillsItems {
+    text-align: center;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  label {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+.progress-bar {
+  background-color: rgb(223, 200, 158); 
+}
+
+#edu h3 {
+  margin-bottom: 2rem; 
+  text-decoration: underline; 
+  text-align: center;
+}
+
+#last {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  #last {
+    text-align: center;
+  }
+}
+
+#first {
+  margin-top: 2rem; 
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  #first {
+    text-align: center;
+  }
+}
+
+#school {
+    color: rgb(95, 95, 93);   
+  }
+
+#date {
+  color: rgb(223, 194, 140);
+}
+
+#lang {
+  text-align: center;    
+}
+
+@media (max-width: 600px) {
+  #lang {
+    margin-top: 1rem;
+  }
+}
+
+#lang h3 {
+  margin-bottom: 2rem; 
+  text-decoration: underline;   
+}
+
+#lang ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history h3 {
+  margin-bottom: 2rem; 
+  text-decoration: underline;
+  color: rgb(95, 95, 93);
+  text-align: center; 
+}
+
+#historyItem {
+  text-align: left;    
+}
+
+@media (max-width: 600px) {
+  #historyItem {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #historyDesc {
+    text-align: left;
+  }
+}
+
+#historyItem h5 {
+  color: rgb(95, 95, 93);
+}
+
+#next {
+  margin-top: 1.5rem; 
+}
+
+
+
+#consent {
+  margin-top: 4rem;   
+}
+
+@media (max-width: 600px) {
+  #consent {
+    text-align: center;
+  }
+}
+
+#consent p {
+  opacity: 0.6;    
+}
+
+.footer {
+  text-align: center; 
+  margin-top: 4rem; 
+  background-color:rgb(201, 199, 200); 
+  padding-top: 1rem; 
+  padding-bottom: 1rem; 
+  font-size: 12px;    
+}
+
+#links img {
+  width: 2rem; 
+  height: 2rem; 
+  margin-right: 1rem;    
+}
+
+@media (max-width: 600px) {
+  #linksItem {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.footer p {
+  margin-bottom: 0; 
+  margin-top: 1.5rem;  
+}
+
+@media (max-width: 600px) {
+  .footer p {
+    margin-top: 1rem;
+  }
+}
+
+.footer a {
+  color:  rgb(95, 95, 93);
+  font-weight: 600;     
+}
