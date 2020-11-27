@@ -1,6 +1,6 @@
 .header {
   text-align: center; 
-  background-color:rgb(201, 199, 200); 
+  background-color:rgb(217, 219, 219); 
   padding-top: 1rem; 
   padding-bottom: 1.5rem; 
   margin-bottom:0;  
@@ -48,7 +48,7 @@
 
 #myPhoto {
   width: 180px; 
-  height: 180px; 
+  height: 180px;
 }
 
 #pdf-button {
@@ -56,9 +56,10 @@
 }
 
 .contact {
-  background-color: rgb(223, 200, 158); 
+  background-color: rgb(209, 205, 221); 
   padding-top: 0.3rem; 
-  padding-bottom: 0.3rem; 
+  padding-bottom: 0.3rem;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.19);
 }
 
 #mediaIcons {
@@ -136,6 +137,12 @@
   color: rgb(95, 95, 93);   
 }
 
+@media (max-width: 800px) {
+  .newLine {
+    display:none;
+  }   
+}
+
 @media (max-width: 600px) {
   .projectItem {
     text-align: center;
@@ -143,7 +150,7 @@
 }
 
 .projectItem h5 {
-  color: rgb(223, 194, 140);
+  color: rgb(175, 168, 197);
 }
 
 .projectItem a {
@@ -176,8 +183,7 @@ span.checked {
 
 @media (max-width: 600px) {
   #skillsItems {
-    text-align: center;
-    
+    text-align: center; 
   }
 }
 
@@ -189,7 +195,7 @@ span.checked {
 }
 
 .progress-bar {
-  background-color: rgb(223, 200, 158); 
+  background-color: rgb(175, 168, 197); 
 }
 
 #edu h3 {
@@ -224,7 +230,7 @@ span.checked {
   }
 
 #date {
-  color: rgb(223, 194, 140);
+  color: rgb(175, 168, 197);
 }
 
 #lang {
@@ -278,8 +284,6 @@ span.checked {
   margin-top: 1.5rem; 
 }
 
-
-
 #consent {
   margin-top: 4rem;   
 }
@@ -297,10 +301,10 @@ span.checked {
 .footer {
   text-align: center; 
   margin-top: 4rem; 
-  background-color:rgb(201, 199, 200); 
+  background-color:rgb(217, 219, 219); 
   padding-top: 1rem; 
   padding-bottom: 1rem; 
-  font-size: 12px;    
+  font-size: 12px;
 }
 
 #links img {
