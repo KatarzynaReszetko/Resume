@@ -1,0 +1,161 @@
+{
+    "metaRobots" : "index,follow",
+    "metaDescription" : "Front-end Developer passionate in art and design.",
+    "metaKeywords" : "bushwebdesign, bush web design, Front-end, Front End Developer, Frontend Developer, Front End Development, web developer, web design, web designer, responsive web design, design, creating websites, websites, creative websites, user experience, HTML, HTML5, CSS, CSS3, Bootstrap4, javascript, Cracow, Poland, Katarzyna Reszetko, Reszetko",
+    "metaViewport" : "width=device-width, initial-scale=1.0",
+    "metaAuthor" : "Katarzyna Reszetko",
+    "metaogImage" : "../img/kasia.jpg",
+    "documentName" : "Resume",
+    "linkBootstrap" : "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+    "cssStyle" : "../style.css",
+    "favicon" : "../img/KASIAcircle.png",
+    "hreflang1" : "../pl/index.html",
+    "hreflang2" : "index.html",
+    "person" : {
+        "firstname_lastname" : "Katarzyna Reszetko",
+        "profession" : "Front-end Developer",
+        "myPhoto" : "../img/KASIAcircle.png"
+    },
+    "buttonName" : "Print",
+    "contact" : {
+        "email" : {"myEmail" : "katarzyna.reszetko@gmail.com", "iconPhoto": "../img/email.png"},
+        "phone" : {"myPhone" : "+48 721 595 818", "iconPhoto": "../img/phone.png"},
+        "socialLinks" : [
+            {"link" : "https://linkedin.com/in/katarzyna-reszetko/", "iconPhoto" : "../img/Linkedin_1.png"},
+            {"link" : "https://facebook.com/katarzyna.reszetko", "iconPhoto" : "../img/Facebook_1.png"},
+            {"link" : "https://github.com/KatarzynaReszetko", "iconPhoto" : "../img/Github_1.png"}
+        ]
+    },
+    "details" : {
+        "aboutMeTitle" : "About Me",
+        "aboutMe" : "I am a creative person who appreciates the details of everyday life and is looking for creative challenges. Since the end of 2019, I have been developing my own interests by exploring the subject of frontend technologies and website development, which is why I passionately transfer my creative ideas into the virtual world. Since then, I have been constantly training and developing my skills.",
+        "projectsTitle" : "Projects",
+        "projects" : [
+            {
+                "projectName" : "BushWebDesign",
+                "projectURL" : "https://bushwebdesign.com",
+                "aboutProject" : "Personal business card website.",
+                "TechnologiesTitle" : "Technologies:",
+                "Technologies" : "HTML5, CSS, Bootstrap4"
+            },
+            {
+                "projectName" : "Application COOKBOOK",
+                "projectURL" : "https://cookbook-find-your-inspiration.netlify.app",
+                "aboutProject" : "It allows you to add recipes very easily.",
+                "TechnologiesTitle": "Technologies:",
+                "Technologies" : "PostgreSQL, Flask, Python, JavaScript, HTML5, CSS, Bootstrap4"
+            },
+            {
+                "projectName" : "Resume in HTML",
+                "projectURL" : "https://bushwebdesign.com/cv/en",
+                "aboutProject" : "My resume in HTML version.",
+                "TechnologiesTitle": "Technologies:",
+                "Technologies" : "HTML5, CSS, Bootstrap4"
+            }
+        ],
+        "skillsTitle" : "Skills",
+        "skills" : [
+            {"skill" : "HTML5", "progress" : "90%"},
+            {"skill" : "CSS", "progress" : "90%"},
+            {"skill" : "Bootstrap4", "progress" : "90%"},
+            {"skill" : "JavaScript", "progress" : "40%"},
+            {"skill" : "Git", "progress" : "70%"},
+            {"skill" : "Handlebars", "progress" : "40%"},
+            {"skill" : "Gulp", "progress" : "15%"},
+            {"skill" : "Postman", "progress" : "70%"},
+            {"skill" : "PostgreSQL", "progress" : "70%"},
+            {"skill" : "WordPress", "progress" : "40%"},
+            {"skill" : "Photoshop", "progress" : "50%"},
+            {"skill" : "AdobeXD", "progress" : "30%"},
+            {"skill" : "Netlify", "progress" : "70%"},
+            {"skill" : "Python", "progress" : "20%"},
+            {"skill" : "React", "progress" : "5%"}
+
+        ],
+        "educationTitle" : "Education",
+        "education" : [
+            {
+                "schoolName" : "University in Bialystok",
+                "degree" : "Master",
+                "date" : "October 2011 – July 2013",
+                "specialization" : "International Relations / International Security"
+            },
+            {
+                "schoolName" : "Higher Management School in Bialystok",
+                "degree" : "Bachelor",
+                "date" : "October 2007 – July 2010",
+                "specialization": "Tourism and Recreation"
+            }
+        ],
+        "languagesTitle" : "Languages",
+        "languages" : [
+            {"language" : "English", "level" : "B2"},
+            {"language" : "Russian", "level" : "A1"},
+            {"language" : "Polish", "level" : "Native"}
+        ],
+        "employmentTitle" : "Employment History",
+        "history" : [
+            {
+                "position" : "Account Representative",
+                "companyName" : "C.H. Robinson Polska",
+                "city" : "Cracow",
+                "dateEmployment" : "October 2018 – December 2019",
+                "duties" : [
+                    {"description" : "Updating and monitoring the TMS platform."},
+                    {"description" : "Verification of customer data in the database."},
+                    {"description" : "24/7 emergency customer service."},
+                    {"description" : "Extensive customer service (domestic and international customers) in forwarding."},
+                    {"description" : "Cooperation with other departments in the implementation of current duties."}
+                ]
+            },
+            {
+                "position" : "Sales Support Specialist",
+                "companyName" : "Click Apps",
+                "city" : "Cracow",
+                "dateEmployment" : "May 2018 – July 2018",
+                "duties" : [
+                    {"description" : "Active generation of sales leads and close cooperation with the sales, social media and performance department."},
+                    {"description" : "Work with database (creating new records)."}
+                ]
+            },
+            {
+                "position" : "Sales Consultant/ Technical Advisor",
+                "companyName" : "Ekoplast",
+                "city" : "Cracow",
+                "dateEmployment" : "December 2016 – May 2018",
+                "duties" : [
+                    {"description" : "Design and valuation using CAD methodology."},
+                    {"description" : "Meetings with customers and accessories suppliers."},
+                    {"description" : "Keeping customer database and technical documentation."},
+                    {"description" : "Supporting the work of the production preparation department."}
+                ]
+            },
+            {
+                "position" : "Technologist",
+                "companyName" : "Dobroplast",
+                "city" : "Bialystok",
+                "dateEmployment" : "May 2016 – December 2016",
+                "duties" : [
+                    {"description" : "Design and valuation using CAD methodology with close cooperation with the production and sales department."},
+                    {"description" : "Quality control at the design stage and recognizing customers requirements and expectations."}
+                ]
+            },
+            {
+                "position" : "Sales Consultant/ Technical Advisor",
+                "companyName" : "JOCZ",
+                "city" : "Bialystok",
+                "dateEmployment" : "January 2014 – May 2016",
+                "duties" : [
+                    {"description" : "Running a stationary office (designing, valuation, consulting, sales, service)."},
+                    {"description" : "Keeping customer database and technical documentation."}
+                ]
+            }
+        ],
+        "consent" : "I hereby give consent for my personal data to be processed for the purpose of conducting recruitment for the position for which I am applying."
+    },
+    "socialLinks" : [
+        {"link" : "https://linkedin.com/in/katarzyna-reszetko/", "iconPhoto" : "../img/Linkedin_1.png"},
+        {"link" : "https://facebook.com/katarzyna.reszetko", "iconPhoto" : "../img/Facebook_1.png"},
+        {"link" : "https://github.com/KatarzynaReszetko", "iconPhoto" : "../img/Github_1.png"}    
+    ]
+}

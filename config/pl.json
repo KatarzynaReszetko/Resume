@@ -1,0 +1,165 @@
+{
+    "metaRobots" : "index,follow",
+    "metaDescription" : "Front-end Developer passionate in art and design.",
+    "metaKeywords" : "bushwebdesign, bush web design, Front-end, Front End Developer, Frontend Developer, Front End Development, web developer, web design, web designer, responsive web design, design, tworzenie stron internetowych, strony www, user experience, HTML, HTML5, CSS, CSS3, Bootstrap4, javascript, Kraków, Skała, Zielonki, Katarzyna Reszetko, Reszetko",
+    "metaViewport" : "width=device-width, initial-scale=1.0",
+    "metaAuthor" : "Katarzyna Reszetko",
+    "metaogImage" : "../img/kasia.jpg",
+    "documentName" : "CV",
+    "linkBootstrap" : "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+    "cssStyle" : "../style.css",
+    "favicon" : "../img/KASIAcircle.png",
+    "hreflang1" : "index.html",
+    "hreflang2" : "../en/index.html",
+    "person" : {
+        "firstname_lastname" : "Katarzyna Reszetko",
+        "profession" : "Front-end Developer",
+        "myPhoto" : "../img/KASIAcircle.png"
+    },
+    "buttonName" : "Drukuj",
+    "contact" : {
+        "email" : {"myEmail" : "katarzyna.reszetko@gmail.com", "iconPhoto": "../img/email.png"},
+        "phone" : {"myPhone" : "+48 721 595 818", "iconPhoto": "../img/phone.png"},
+        "socialLinks" : [
+            {"link" : "https://linkedin.com/in/katarzyna-reszetko/", "iconPhoto" : "../img/Linkedin_1.png"},
+            {"link" : "https://facebook.com/katarzyna.reszetko", "iconPhoto" : "../img/Facebook_1.png"},
+            {"link" : "https://github.com/KatarzynaReszetko", "iconPhoto" : "../img/Github_1.png"}
+        ]
+    },
+    "details" : {
+        "aboutMeTitle" : "O mnie",
+        "aboutMe" : "Jestem osobą kreatywną, która docenia detale życia codziennego i poszukuje twórczych wyzwań. Od końca 2019 roku rozwijam własne zainteresowania zgłębiając tematykę technologii frontendowych oraz tworzenia stron internetowych, przez co moje pomysły twórcze z pasją przenoszę w wirtualny świat. Od tego momentu nieustannie się dokształcam i rozwijam umiejętności.",
+        "projectsTitle" : "Projekty",
+        "projects" : [
+            {
+                "projectName" : "BushWebDesign",
+                "projectURL" : "https://bushwebdesign.com",
+                "aboutProject" : "Osobista strona internetowa typu wizytówka.",
+                "TechnologiesTitle": "Użyte technologie:",
+                "Technologies" : "HTML5, CSS, Bootstrap4"
+            },
+            {
+                "projectName" : "Aplikacja COOKBOOK",
+                "projectURL" : "https://cookbook-find-your-inspiration.netlify.app",
+                "aboutProject" : "Umożliwia proste dodawanie przepisów kulinarnych.",
+                "TechnologiesTitle": "Użyte technologie:",
+                "Technologies" : "PostgreSQL, Flask, Python, JavaScript, HTML5, CSS, Bootstrap4"
+            },
+            {
+                "projectName" : "CV w HTML",
+                "projectURL" : "https://bushwebdesign.com/cv",
+                "aboutProject" : "Moje CV stworzone w HTML",
+                "TechnologiesTitle": "Użyte technologie:",
+                "Technologies" : "HTML5, CSS, Bootstrap4"
+            }
+        ],
+        "skillsTitle" : "Umiejętności",
+        "skills" : [
+            {"skill" : "HTML5", "progress" : "90%"},
+            {"skill" : "CSS", "progress" : "90%"},
+            {"skill" : "Bootstrap4", "progress" : "90%"},
+            {"skill" : "JavaScript", "progress" : "40%"},
+            {"skill" : "Git", "progress" : "70%"},
+            {"skill" : "Handlebars", "progress" : "40%"},
+            {"skill" : "Gulp", "progress" : "15%"},
+            {"skill" : "Postman", "progress" : "70%"},
+            {"skill" : "PostgreSQL", "progress" : "70%"},
+            {"skill" : "WordPress", "progress" : "40%"},
+            {"skill" : "Photoshop", "progress" : "50%"},
+            {"skill" : "AdobeXD", "progress" : "30%"},
+            {"skill" : "Netlify", "progress" : "70%"},
+            {"skill" : "Python", "progress" : "20%"},
+            {"skill" : "React", "progress" : "5%"}
+
+        ],
+        "educationTitle" : "Edukacja",
+        "education" : [
+            {
+                "schoolName" : "Uniwersytet w Białymstoku",
+                "degree" : "Studia Magisterskie",
+                "date" : "Październik 2011 – Lipiec 2013",
+                "specialization" : "Stosunki Międzynarodowe / Bezpieczeństwo Międzynarodowe"
+            },
+            {
+                "schoolName" : "Wyższa Szkoła Menedżerska w Białymstoku",
+                "degree" : "Studia Licencjackie",
+                "date" : "Październik 2007 – Lipiec 2010",
+                "specialization": "Turystyka i Rekreacja"
+            }
+        ],
+        "languagesTitle" : "Języki obce",
+        "languages" : [
+            {"language" : "Angielski", "level" : "B2"},
+            {"language" : "Rosyjski", "level" : "A1"},
+            {"language" : "Polski", "level" : "Ojczysty"}
+        ],
+        "employmentTitle" : "Historia zatrudnienia",
+        "history" : [
+            {
+                "position" : "Account Representative",
+                "companyName" : "C.H. Robinson Polska S.A.",
+                "city" : "Kraków",
+                "dateEmployment" : "Październik 2018 – Grudzień 2019",
+                "duties" : [
+                    {"description" : "Aktualizowanie i monitorowanie platformy TMS."},
+                    {"description" : "Weryfikacja wprowadzanych danych do bazy klienta."},
+                    {"description" : "Rozpatrywanie zapytań ofertowych, reklamacji, usterek."},
+                    {"description" : "Kompleksowa obsługa klientów międzynarodowych."},
+                    {"description" : "Całodobowy dyżur alarmowy na wypadek wystąpienia trudności z transportem do klienta."},
+                    {"description" : "Współpraca z innymi działami przy realizacji bieżących obowiązków."}
+                ]
+            },
+            {
+                "position" : "Sales Support Specialist",
+                "companyName" : "Click Apps Sp. z o.o.",
+                "city" : "Kraków",
+                "dateEmployment" : "Maj 2018 – Lipiec 2018",
+                "duties" : [
+                    {"description" : "Aktywne generowanie lidów sprzedażowych w ścisłej współpracy z Działem Sprzedaży, Social Media Specialist oraz Performance."},
+                    {"description" : "Tworzenie własnej bazy danych przy użyciu aplikacji."}
+                ]
+            },
+            {
+                "position" : "Sales Consultant/ Technical Advisor",
+                "companyName" : "Ekoplast S.A.",
+                "city" : "Kraków",
+                "dateEmployment" : "Grudzień 2016 – Maj 2018",
+                "duties" : [
+                    {"description" : "Projektowanie i wycena stolarki okiennej przy użyciu metodologii CAD."},
+                    {"description" : "Obsługa bezpośrednia i zdalna klienta krajowego i międzynarodowego."},
+                    {"description" : "Wsparcie Działu Przygotowania Produkcji."},
+                    {"description" : "Spotkania z dostawcami akcesoriów."},
+                    {"description" : "Tworzenie bazy klientów oraz dokumentacji technicznej."}
+                ]
+            },
+            {
+                "position" : "Technolog",
+                "companyName" : "Dobroplast Fabryka Okien Sp. z o.o.",
+                "city" : "Białystok",
+                "dateEmployment" : "Maj 2016 – Grudzień 2016",
+                "duties" : [
+                    {"description" : "Projektowanie stolarki okiennej w oparciu o metodologię CAD przy ścisłej współpracy z Działem Przygotowania Produkcji i Sprzedaży."},
+                    {"description" : "Kontrola jakości na poziomie projektowym oraz dopasowanie projektu do wymagań i oczekiwań klienta zagranicznego."}
+                ]
+            },
+            {
+                "position" : "Sales Consultant/ Technical Advisor",
+                "companyName" : "Przedsiębiorstwo JOCZ",
+                "city" : "Białystok",
+                "dateEmployment" : "Styczeń 2014 – Maj 2016",
+                "duties" : [
+                    {"description" : "Kompleksowe prowadzenie stacjonarnego salonu sprzedaży stolarki okiennej i drzwiowej."},
+                    {"description" : "Obsługa klenta krajowego i międzynarodowego (projektowanie, wycena, doradztwo techniczne)."},
+                    {"description" : "Tworzenie bazy klientów oraz dokumentacji technicznej."},
+                    {"description" : "Ścisła wpółpraca z serwisem montażowym."}
+                ]
+            }
+        ],
+        "consent" : "Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych. oraz uchylenia dyrektywy 95/46/WE (RODO)."
+    },
+    "socialLinks" : [
+        {"link" : "https://linkedin.com/in/katarzyna-reszetko/", "iconPhoto" : "../img/Linkedin_1.png"},
+        {"link" : "https://facebook.com/katarzyna.reszetko", "iconPhoto" : "../img/Facebook_1.png"},
+        {"link" : "https://github.com/KatarzynaReszetko", "iconPhoto" : "../img/Github_1.png"}    
+    ]
+}

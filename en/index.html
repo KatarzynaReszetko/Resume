@@ -1,351 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">  
 <head>
   <meta charset="utf-8">
-  <meta name="robots" content="index,follow">
-  <meta name="description" content="Front-end Developer passionate in art and design.">
-  <meta name="keywords" content="bushwebdesign, bush web design, Front-end, Front End Developer, Frontend Developer, Front End Development, web developer, web design, web designer, responsive web design, design, tworzenie stron internetowych, strony www, user experience, HTML, HTML5, CSS, CSS3, Bootstrap4, javascript, Kraków, Skała, Zielonki, Katarzyna Reszetko, Reszetko">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Katarzyna Reszetko">
-  <meta property="og:image" content="../img/kasia.jpg"> 
-  <title>Katarzyna Reszetko | Resume</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../style.css">
-  <link rel="shortcut icon" href="../img/KASIAcircle.png">
-  <link rel="alternate" hreflang="pl" href=”../index.html”/>
-  <link rel="alternate" hreflang="en" href=”index.html”/>
-
+  <meta name="robots" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="">
+  <meta name="author" content="">
+  <meta property="og:image" content=""> 
+  <title id="title"></title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="shortcut icon" type="image/png" href="">
+  <link rel="alternate" hreflang="pl" href=””/>
+  <link rel="alternate" hreflang="en" href=””/>
+  <script src="../js/handlebars-v4.7.6.js"></script>
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/scripts.js"></script>
 </head>
 
-<body id="wholePage">
-
+<body>
+<div id="language"></div>
+<div class="wholeContent">
+<script id="handlebars-wholeContent" type="text/x-handlebars-template">
 <div class="header">
-  <div class="language">
-    <a href="../index.html">PL</a>
-    <span> / </span>
-    <a class="isDisabled" href="index.html">EN</a>
-  </div>
-  <h1>Katarzyna Reszetko</h1>
-  <p>Front-end Developer</p>
-  <img id="myPhoto" src="../img/KASIAcircle.png" alt="circle"/>
+  {{#with person}}
+  <h1>{{firstname_lastname}}</h1>
+  <p>{{profession}}</p>
+  <img id="myPhoto" src="{{myPhoto}}" alt="circle"/>
+  {{/with}}
   <br><br>
-  <button type="button" class="btn btn-outline-secondary" id="pdf-button" onclick="window.print()">Print</button>
+  <button type="button" class="btn btn-outline-secondary" id="pdf-button" onclick="window.print()">{{buttonName}}</button>
 </div>
 
 <div class="contact">
   <div class="row" id="mediaIcons">
+    {{#with contact}}
+    {{#with email}}
     <div class="col-sm-4">
-      <img id="iconOpacity" src="../img/email.png" alt="emial">  
-      <a id="email" href="mailto:katarzyna.reszetko@gmail.com" target="_blank">katarzyna.reszetko@gmail.com</a>
+      <img id="iconOpacity" src="{{iconPhoto}}" alt="emial">
+      <a id="email" href="mailto:{{myEmail}}" target="_blank">{{myEmail}}</a>
     </div>
+    {{/with}}
+    {{#with phone}}
     <div class="col-sm-4">
-      <img id="socialIcon" src="../img/phone.png" alt="phone">
-      <a id="phone" href="tel:+48-721-595-818">+48 721 595 818</a>
+      <img id="socialIcon" src="{{iconPhoto}}" alt="phone">
+      <a id="phone" href="tel:{{myPhone}}">{{myPhone}}</a>
     </div>
+    {{/with}}
     <div class="col-sm-4" id="socialBar">
-      <a id="link1" href="https://www.linkedin.com/in/katarzyna-reszetko/" target="_blank">
-        <img id="socialIcon" src="../img/Linkedin_1.png" alt="linkedin">
+      {{#each socialLinks}}
+      <a id="link1" href="{{link}}" target="_blank">
+        <img id="socialIcon" src="{{iconPhoto}}" alt="icon">
       </a>
-      <a id="link1" href="https://www.facebook.com/katarzyna.reszetko" target="_blank">
-        <img id="socialIcon" src="../img/Facebook_1.png" alt="facebook">
-      </a>
-      <a id="link1" href="https://github.com/KatarzynaReszetko" target="_blank">
-        <img id="socialIcon" src="../img/Github_1.png" alt="github">
-      </a>    
+      {{/each}}
     </div>
+    {{/with}}
   </div>
 </div>
 
+{{#with details}}
 <div class="container">
   <div class="section">
     <div class="aboutMe">
-      <h3>About Me</h3>
-      <p>
-        I am a creative person who appreciates the details of everyday life and is looking for creative challenges.<br class="newLine">
-        Since the end of 2019, I have been developing my own interests by exploring the subject of frontend technologies<br class="newLine">
-        and website development, which is why I passionately transfer my creative ideas into the virtual world.<br class="newLine">
-        Since then, I have been constantly training and developing my skills.
-      </p>
+      <h3>{{aboutMeTitle}}</h3>
+      <p>{{aboutMe}}</p>
     </div>
   </div>
   <div class="section">
     <div class="row">
       <div class="col-sm-6">
-        <h3>Projects</h3>
+        <h3>{{projectsTitle}}</h3>
+          {{#each projects}}
           <div class="projectItem">
-            <h5>BushWebDesign</h5>
-            <a href="https://www.bushwebdesign.com/">https://bushwebdesign.com</a>
+            <h5>{{projectName}}</h5>
+            <a href={{projectURL}} target="_blank">{{projectURL}}</a>
             <p>
-              Personal business card website.<br>
-              <span class="checked">Technologies:</span> HTML5, CSS, Bootstrap4.
+              {{aboutProject}}<br>
+              <span class="checked">{{TechnologiesTitle}}</span> {{Technologies}}.
             </p>
           </div>
-          <div class="projectItem">
-            <h5 id="nextProject">Aplikacja COOKBOOK</h5>
-            <a href="https://cookbook-find-your-inspiration.netlify.app" target="_blank">https://cookbook-find-your-inspiration.netlify.app</a>
-            <p>
-              It allows you to add recipes very easily.<br>
-              <span class="checked">Technologies:</span> PostgreSQL, Flask, Python, JavaScript, CSS
-              HTML5, CSS, Bootstrap4.
-            </p>
-          </div>
+          {{/each}}
       </div>
       <div class="col-sm-6" id="skills">
-        <h3>Skills</h3>    
+        <h3>{{skillsTitle}}</h3>
+          {{#each skills}}   
           <div class="row">
             <div class="col-sm-6" id="skillsItems">
-              <label>HTML5</label>
+              <label>{{skill}}</label>
             </div>
             <div class="col-sm-6">
               <div class="progress">
-                <div class="progress-bar" style="width: 90%;"><span>90%</span></div>
+                <div class="progress-bar" style="width: {{progress}}"><span>{{progress}}</span></div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>CSS</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 90%;"><span>90%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>Bootstrap4</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 90%;"><span>90%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>JavaScript</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 40%;"><span>40%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems" >
-              <label>Git</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 70%;"><span>70%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>Postman</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 70%;"><span>70%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>PostgreSQL</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 70%;"><span>70%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>WordPress</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 40%;"><span>40%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>Photoshop</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 50%;"><span>50%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>Adobe XD</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 30%;"><span>30%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>Netlify</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 70%;"><span>70%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>Python</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 20%;"><span>20%</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6" id="skillsItems">
-              <label>React</label>
-            </div>
-            <div class="col-sm-6">
-              <div class="progress">
-                <div class="progress-bar" style="width: 5%;"><span>5%</span></div>
-              </div>
-            </div>
-          </div>
+          {{/each}}
       </div>
     </div>
   </div>
   <div class="section">
     <div class="row">
       <div class="col-sm-6" id="edu">
-        <h3>Education</h3>
-          <div id="last">
-            <h5 id="school">University in Bialystok, Master</h5>
-            <p id="date">October 2011 – July 2013</p>
-            <p>International Relations / International Security</p>
+        <h3>{{educationTitle}}</h3>
+          {{#each education}}
+          <div class="education">
+            <h5 id="school">{{schoolName}}, {{degree}} </h5>
+            <p id="date">{{date}}</p>
+            <p>{{specialization}}</p>
           </div>
-          <div id="first">
-            <h5 id="school">Higher Management School in Bialystok, Bachelor</h5>
-            <p id="date">October 2007 – July 2010</p>
-            <p>Tourism and Recreation</p>
-          </div>
+          {{/each}}
       </div>
       <div class="col-sm-6" id="lang">
-        <h3>Languages</h3>
+        <h3>{{languagesTitle}}</h3>
+        {{#each languages}}
         <ul>
-         <li>English – B2</li>
-         <li>Russian – A1</li>
+         <li>{{language}} – {{level}}</li>
         </ul>
+        {{/each}}
       </div>
     </div>
   </div>
   <div class="section">
     <div class="history">
-      <h3>Employment history</h3>
-        <div class="row">
+      <h3>{{employmentTitle}}</h3>
+        {{#each history}}
+        <div class="row" id="historyElements">
           <div class="col-sm-6" id="historyItem">
-            <h5>Account Representative in C.H. Robinson Poland, Cracow</h5>
-            <p id="date">October 2018 – December 2019</p>
+            <h5>{{position}}, {{companyName}}, {{city}}</h5>
+            <p id="date">{{dateEmployment}}</p>
           </div>
           <div class="col-sm-6">
+            {{#each duties}}
             <ul id="historyDesc">
-              <li>Updating and monitoring the TMS platform.</li>
-              <li>Verification of customer data in the database.</li>
-              <li>24/7 emergency customer service.</li>
-              <li>Extensive customer service (domestic and international customers) in forwarding.</li>
-              <li>Cooperation with other departments in the implementation of current duties.</li>
+              <li>{{description}}</li>
             </ul>
+            {{/each}}
           </div>
         </div>
-        <div class="row" id="next">
-          <div class="col-sm-6" id="historyItem">
-            <h5>Sales Support Specialist in Click Apps, Cracow</h5>
-            <p id="date">May 2018 – July 2018</p>
-          </div>
-          <div class="col-sm-6">
-            <ul id="historyDesc">
-              <li>Active generation of sales leads and close cooperation with the sales, social media and performance department.</li>
-              <li>Work with database (creating new records).</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row" id="next">
-          <div class="col-sm-6" id="historyItem">
-            <h5>Sales Consultant/ Technical Advisor in Ekoplast S.A., Cracow</h5>
-            <p id="date">December 2016 – May 2018</p>
-          </div>
-          <div class="col-sm-6">
-            <ul id="historyDesc">
-              <li>Design and valuation using CAD methodology.</li>
-              <li>Meetings with customers and accessories suppliers.</li>
-              <li>Keeping customer database and technical documentation.</li>
-              <li>Supporting the work of the production preparation department.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row" id="next">
-          <div class="col-sm-6" id="historyItem">
-            <h5>Technologist in Dobroplast, Bialystok</h5>
-            <p id="date">May 2016 – December 2016</p>
-          </div>
-          <div class="col-sm-6">
-            <ul id="historyDesc">
-              <li>Design and valuation using CAD methodology with close cooperation with the production and sales department.</li>
-              <li>Quality control at the design stage and recognizing customers requirements and expectations.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="row" id="next">
-          <div class="col-sm-6" id="historyItem">
-            <h5>Sales Consultant/ Technical Advisor in JOCZ, Bialystok</h5>
-            <p id="date">January 2014 – May 2016</p>
-          </div>
-          <div class="col-sm-6">
-            <ul id="historyDesc">
-              <li>Running a stationary office (designing, valuation, consulting, sales, service).</li>
-              <li>Keeping customer database and technical documentation.</li>
-            </ul>
-          </div>
-        </div>
+        {{/each}}
     </div>
   </div>
   <div class="section" id="consent">
-    <p>
-      I hereby give consent for my personal data to be processed for the purpose of conducting recruitment for the position for
-      which I am applying.
-    </p>
+    <p>{{consent}}</p>
   </div>
 </div>
+{{/with}}
 
 <div class="footer">
   <div class="row" id="links">
+    {{#each socialLinks}}
     <div class="col-sm-4" id="linksItem">
-      <img src="../img/Linkedin_1.png" alt="linkedin">
-      <a href="https://linkedin.com/in/katarzyna-reszetko/" target="_blank">https://linkedin.com/in/katarzyna-reszetko/</a>
+      <img src="{{iconPhoto}}" alt="icon">
+      <a href="{{link}}" target="_blank">{{link}}</a>
     </div>
-    <div class="col-sm-4" id="linksItem">
-      <img src="../img/Facebook_1.png" alt="facebook">
-      <a href="https://facebook.com/katarzyna.reszetko" target="_blank">https://facebook.com/katarzyna.reszetko</a>
-    </div>
-    <div class="col-sm-4" id="linksItem">
-      <img src="../img/Github_1.png" alt="github">
-      <a href="https://github.com/KatarzynaReszetko" target="_blank">https://github.com/KatarzynaReszetko</a>
-    </div>
+    {{/each}}
   </div>
-  <p>Copyright © 2020 Katarzyna Reszetko - BushWebDesign <a href="https://bushwebdesign.com/" target="_blank">https://bushwebdesign.com/</a></p>
+  <p>Copyright © 2021 Katarzyna Reszetko - <a href="https://bushwebdesign.com/en" target="_blank">BushWebDesign</a></p>
 </div>
-
-<!-- <script src="dist/bundle.js"></script> -->
+</script>
+</div>
 
 </body>
 </html>

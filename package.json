@@ -1,0 +1,23 @@
+{
+  "name": "mycv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatarzynaReszetko/Resume.git"
+  },
+  "author": "Katarzyna Reszetko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatarzynaReszetko/Resume/issues"
+  },
+  "homepage": "https://github.com/KatarzynaReszetko/Resume#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0"
+  }
+}

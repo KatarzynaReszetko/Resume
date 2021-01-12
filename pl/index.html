@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="">  
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="">
+  <meta name="author" content="">
+  <meta property="og:image" content=""> 
+  <title id="title"></title>
+  <link rel="stylesheet" href="">
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="shortcut icon" type="image/png" href="">
+  <link rel="alternate" hreflang="pl" href=””/>
+  <link rel="alternate" hreflang="en" href=””/>
+  <script src="../js/handlebars-v4.7.6.js"></script>
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</head>
+
+<body>
+<div id="language"></div>
+<div class="wholeContent">
+<script id="handlebars-wholeContent" type="text/x-handlebars-template">
+<div class="header">
+  {{#with person}}
+  <h1>{{firstname_lastname}}</h1>
+  <p>{{profession}}</p>
+  <img id="myPhoto" src="{{myPhoto}}" alt="circle"/>
+  {{/with}}
+  <br><br>
+  <button type="button" class="btn btn-outline-secondary" id="pdf-button" onclick="window.print()">{{buttonName}}</button>
+</div>
+
+<div class="contact">
+  <div class="row" id="mediaIcons">
+    {{#with contact}}
+    {{#with email}}
+    <div class="col-sm-4">
+      <img id="iconOpacity" src="{{iconPhoto}}" alt="emial">
+      <a id="email" href="mailto:{{myEmail}}" target="_blank">{{myEmail}}</a>
+    </div>
+    {{/with}}
+    {{#with phone}}
+    <div class="col-sm-4">
+      <img id="socialIcon" src="{{iconPhoto}}" alt="phone">
+      <a id="phone" href="tel:{{myPhone}}">{{myPhone}}</a>
+    </div>
+    {{/with}}
+    <div class="col-sm-4" id="socialBar">
+      {{#each socialLinks}}
+      <a id="link1" href="{{link}}" target="_blank">
+        <img id="socialIcon" src="{{iconPhoto}}" alt="icon">
+      </a>
+      {{/each}}
+    </div>
+    {{/with}}
+  </div>
+</div>
+
+{{#with details}}
+<div class="container">
+  <div class="section">
+    <div class="aboutMe">
+      <h3>{{aboutMeTitle}}</h3>
+      <p>{{aboutMe}}</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>{{projectsTitle}}</h3>
+          {{#each projects}}
+          <div class="projectItem">
+            <h5>{{projectName}}</h5>
+            <a href={{projectURL}} target="_blank">{{projectURL}}</a>
+            <p>
+              {{aboutProject}}<br>
+              <span class="checked">{{TechnologiesTitle}}</span> {{Technologies}}.
+            </p>
+          </div>
+          {{/each}}
+      </div>
+      <div class="col-sm-6" id="skills">
+        <h3>{{skillsTitle}}</h3>
+          {{#each skills}}   
+          <div class="row">
+            <div class="col-sm-6" id="skillsItems">
+              <label>{{skill}}</label>
+            </div>
+            <div class="col-sm-6">
+              <div class="progress">
+                <div class="progress-bar" style="width: {{progress}}"><span>{{progress}}</span></div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="row">
+      <div class="col-sm-6" id="edu">
+        <h3>{{educationTitle}}</h3>
+          {{#each education}}
+          <div class="education">
+            <h5 id="school">{{schoolName}}, {{degree}} </h5>
+            <p id="date">{{date}}</p>
+            <p>{{specialization}}</p>
+          </div>
+          {{/each}}
+      </div>
+      <div class="col-sm-6" id="lang">
+        <h3>{{languagesTitle}}</h3>
+        {{#each languages}}
+        <ul>
+         <li>{{language}} – {{level}}</li>
+        </ul>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="history">
+      <h3>{{employmentTitle}}</h3>
+        {{#each history}}
+        <div class="row" id="historyElements">
+          <div class="col-sm-6" id="historyItem">
+            <h5>{{position}}, {{companyName}}, {{city}}</h5>
+            <p id="date">{{dateEmployment}}</p>
+          </div>
+          <div class="col-sm-6">
+            {{#each duties}}
+            <ul id="historyDesc">
+              <li>{{description}}</li>
+            </ul>
+            {{/each}}
+          </div>
+        </div>
+        {{/each}}
+    </div>
+  </div>
+  <div class="section" id="consent">
+    <p>{{consent}}</p>
+  </div>
+</div>
+{{/with}}
+
+<div class="footer">
+  <div class="row" id="links">
+    {{#each socialLinks}}
+    <div class="col-sm-4" id="linksItem">
+      <img src="{{iconPhoto}}" alt="icon">
+      <a href="{{link}}" target="_blank">{{link}}</a>
+    </div>
+    {{/each}}
+  </div>
+  <p>Copyright © 2021 Katarzyna Reszetko - <a href="https://bushwebdesign.com/" target="_blank">BushWebDesign</a></p>
+</div>
+</script>
+</div>
+
+</body>
+</html>
